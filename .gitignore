@@ -66,3 +66,5 @@ Temporary Items
 
 .idea/workspace.xml
 /ssh/deploy/local-admin.pub
+/ssh/facts/*
+/ssh/retry/*
