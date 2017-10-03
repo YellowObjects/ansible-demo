@@ -1,0 +1,4 @@
+---
+- name: set up heronews 
+  import_tasks: heronews.yml
+  

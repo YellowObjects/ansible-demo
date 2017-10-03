@@ -1,0 +1,11 @@
+---
+## Install System Pakcages and Utils
+
+- name: Install System application chromium browser geany mysql-workbench
+  apt: name={{ item }} state=latest update_cache=yes cache_valid_time=5400
+  with_items:
+   - geany
+   - mysql-workbench
+   - chromium-browser
+   - filezilla
+   

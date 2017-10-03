@@ -1,0 +1,23 @@
+---
+- hosts: Dharam
+  remote_user: yodev2
+  become: true
+  roles:
+     - { role: common,           tags: [ 'common'     ] }
+     - { role: php,              tags: [ 'php'        ] }
+     - { role: apache,           tags: [ 'apache'     ] }
+     - { role: nginx,            tags: [ 'nginx'      ] }
+     - { role: mysql,            tags: [ 'mysql'      ] }
+     - { role: phpmyadmin,       tags: [ 'phpmyadmin' ] }   
+     - { role: mongodb,          tags: [ 'mongodb'    ] }
+     - { role: google-chrome,    tags: [ 'chrome'     ] }
+     - { role: common_app,       tags: [ 'common_app' ] }
+     - { role: setup-herosports, tags: [ 'herosports' ] }
+     - { role: setup-cc-web-api, tags: [ 'web-api'    ] }
+     - { role: setup-cc-mobile-api,tags: [ 'mobile-api'] }
+
+
+
+
+
+

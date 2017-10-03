@@ -1,0 +1,4 @@
+# file: roles/common_app/tasks/main.yml
+---
+
+- include: commonapp.yml
