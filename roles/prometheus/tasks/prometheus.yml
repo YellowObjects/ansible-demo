@@ -1,0 +1,25 @@
+---
+- name: Download zip file 
+  get_url:
+    url: https://github.com/prometheus/prometheus/releases/download/v1.7.1/prometheus-1.7.1.linux-amd64.tar.gz
+    dest: /home/{{ user }}
+    mode: 0777
+
+- name: archive files on serverA
+  shell: tar xvfz /home/{{ user }}/prometheus-1.7.1.linux-amd64.tar.gz
+
+
+- name: move confige file
+  template:
+    src: ./templates/prometheus.yml
+    dest: /home/{{ user }}/prometheus-1.7.1.linux-amd64
+    owner: pankaj
+    group: pankaj
+    mode: 0777
+
+
+- name: Change the working directory to somedir/ before executing the command.
+  shell: nohup ./prometheus -config.file=prometheus.yml &
+  args:
+    chdir: /home/{{ user }}/prometheus-1.7.1.linux-amd64
+
