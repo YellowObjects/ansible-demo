@@ -50,7 +50,7 @@
 
 
 - name: build mongodb_exporter source code
-  command: go get github.com/dcu/mongodb_exporter
+  command: go get -u github.com/dcu/mongodb_exporter
   args:
     creates: "{{ prometheus_gopath }}/bin/mongodb_exporter"
   environment:
