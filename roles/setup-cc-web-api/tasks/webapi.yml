@@ -1,5 +1,0 @@
----
-- name: clone web api repo
-  git: repo={{ web_api_url }} version={{ web_api_repo_version }} dest={{ html_dir }}/{{ web_api_name }}
-    recursive=yes track_submodules=yes accept_hostkey=yes force=yes key_file={{ git_key }}
-

@@ -12,9 +12,6 @@
      - { role: mongodb,          tags: [ 'mongodb'    ] }
      - { role: google-chrome,    tags: [ 'chrome'     ] }
      - { role: common_app,       tags: [ 'common_app' ] }
-     - { role: setup-herosports, tags: [ 'herosports' ] }
-     - { role: setup-cc-web-api, tags: [ 'web-api'    ] }
-     - { role: setup-cc-mobile-api,tags: [ 'mobile-api'] }
      - { role: prometheus,         tags: [ 'prometheus'] }
      - { role: mongodb-monitoring,         tags: [ 'mongo-prometheus'] } 
 
