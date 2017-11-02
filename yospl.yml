@@ -1,5 +1,5 @@
 ---
-- hosts: Extra
+- hosts: mongo_qr
   remote_user: ubuntu
   become: true
   roles:
@@ -13,8 +13,10 @@
      - { role: google-chrome,    tags: [ 'chrome'     ] }
      - { role: common_app,       tags: [ 'common_app' ] }
      - { role: prometheus,         tags: [ 'prometheus'] }
-     - { role: mongodb-monitoring,         tags: [ 'mongo-prometheus'] } 
-
+     - { role: mongodb-monitoring,  tags: [ 'mongo-prometheus'] } 
+     - { role: grafana,    tags: [ 'grafana'] }
+     - { role: ansible-go,    tags: [ 'go'] }
+     
 
 
 

@@ -65,8 +65,10 @@ Temporary Items
 .apdisk
 
 .idea/workspace.xml
-/ssh/deploy/local-admin.pub
+/ssh/deploy/*
 /ssh/facts/*
 /ssh/retry/*
 /ssh/logs/*
+/ssh/keys/
+
 .idea
